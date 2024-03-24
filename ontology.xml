@@ -1,0 +1,397 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+xmlns:owl="http://www.w3.org/2002/07/owl#" 
+xmlns:dc="http://purl.org/dc/elements/1.1/"> 
+ 
+<!--  OWL Header  --> 
+<owl:Ontology rdf:about="http://www.example.com/MechanicalEngineering"> 
+<dc:title> Ontology for Mechanical Engineering </dc:title> 
+<dc:description> The Mechanical Engineering Ontology </dc:description> 
+</owl:Ontology> 
+ 
+<!--  OWL Class Definition - Engineer Design  --> 
+<owl:Class 
+rdf:about="http://www.example.com/MechanicalEngineering#EngineeringDesign"> 
+<rdfs:label>Engineering Design</rdfs:label> 
+<rdfs:comment>The class of five methods of Engineering Design in Mechanical Engineering.</rdfs:comment> 
+</owl:Class> 
+ 
+<!--  OWL Class Definition – Knowledge Discovery  --> 
+<owl:Class 
+rdf:about="http://www.example.com/MechanicalEngineering#KnowledgeDiscovery"> 
+<rdfs:label>Knowledge Discovery</rdfs:label> 
+<rdfs:comment>The class of five methods of Knowledge Discovery in Mechanical Engineering.</rdfs:comment> 
+</owl:Class> 
+ 
+<!--  OWL Class Definition – Quality Control  --> 
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering#QualityControl"> 
+<rdfs:label>Quality Control</rdfs:label> 
+<rdfs:comment>The class of five methods of Quality Controlling in Mechanical Engineering.</rdfs:comment> 
+</owl:Class> 
+ 
+<!--  OWL Class Definition – Education and Training  --> 
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering#EducationTraining"> 
+<rdfs:label>Education and Training</rdfs:label> 
+<rdfs:comment>The class of five methods of Education and Training in Mechanical Engineering.</rdfs:comment> 
+</owl:Class>
+
+<!--
+/////////////////////////////////////////////////////////////////////////////
+ ///////// --> 
+<!-- Sub classes of Engineering Design class starts from here --> 
+ 
+<!-- OWL SubClass Definition - Conceptualization --> 
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering#Conceptualization"> 
+ 
+    <!-- Conceptualization is a subclassification of Engineering Design --> 
+    <rdfs:subClassOf 
+rdf:resource="http://www.example.com/MechanicalEngineering#EngineeringDesign"/> 
+ 
+    <rdfs:label>Conceptualization</rdfs:label> 
+    <rdfs:comment>Conceptualization etc</rdfs:comment> 
+  
+</owl:Class> 
+ 
+<!-- OWL SubClass Definition - Requirement analysis --> 
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering#RequirementAnalysis"> 
+ 
+    <!-- Requirement analysis is a subclassification of Engineering design --> 
+    <rdfs:subClassOf 
+rdf:resource="http://www.example.com/MechanicalEngineering#EngineeringDesign"/>  
+ 
+    <rdfs:label>Requirement analysis</rdfs:label> 
+    <rdfs:comment>Requirement analysis etc</rdfs:comment> 
+  
+</owl:Class> 
+ 
+<!-- OWL SubClass Definition - Material Selection --> 
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering#MaterialSelection"> 
+ 
+    <!-- Material Selection is a subclassification of Engineering Design --> 
+    <rdfs:subClassOf 
+rdf:resource="http://www.example.com/MechanicalEngineering#EngineeringDesign"/> 
+ 
+    <rdfs:label>Material Selection</rdfs:label> 
+        <rdfs:comment>Material Selection etc</rdfs:comment> 
+     
+</owl:Class> 
+ 
+<!-- OWL SubClass Definition - Manufacturing Precesses --> 
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering#ManufacturingProcesses"> 
+ 
+    <!--  Manufacturing Precesses is a subclassification of Engineering Design --> 
+    <rdfs:subClassOf 
+rdf:resource="http://www.example.com/MechanicalEngineering#EngineeringDesign"/> 
+ 
+    <rdfs:label> Manufacturing Processes</rdfs:label> 
+    <rdfs:comment> Manufacturing Processes etc</rdfs:comment> 
+ 
+</owl:Class> 
+ 
+<!-- OWL SubClass Definition - Documentation --> 
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering#Documentation"> 
+ 
+    <rdfs:subClassOf 
+rdf:resource="http://www.example.com/MechanicalEngineering#EngineeringDesign"/> 
+ 
+    <rdfs:label>Documentation</rdfs:label> 
+    <rdfs:comment>Documentation etc</rdfs:comment> 
+
+</owl:Class> 
+
+<!--
+/////////////////////////////////////////////////////////////////////////////
+ ///////// --> 
+ 
+<!-- Sub classes of Knowledge Discovery class starts from here --> 
+ 
+<!-- OWL SubClass Definition - Data Integration --> 
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering#DataIntegration"> 
+ 
+    <!-- Data Integration is a subclassification of Knowledge discovery --> 
+    <rdfs:subClassOf 
+rdf:resource="http://www.example.com/MechanicalEngineering#KnowledgeDiscovery"/> 
+ 
+    <rdfs:label>Data Integration</rdfs:label> 
+    <rdfs:comment>Data Integration etc</rdfs:comment> 
+ 
+</owl:Class> 
+
+<!--  Define the Data Integration class instance  --> 
+<rdf:Description 
+rdf:about="http://www.example.com/MechanicalEngineering#DataIntegration"> 
+<!-- Data Integration is an individual (instance) of the Knowledge Discovery class  --> 
+<rdf:type 
+rdf:resource="http://www.example.com/MechanicalEngineering#KnowledgeDiscovery"/> 
+</rdf:Description> 
+ 
+
+<!-- OWL SubClass Definition - Data Aggregation --> 
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering#DataAggregation"> 
+ 
+
+    <rdfs:subClassOf 
+rdf:resource="http://www.example.com/MechanicalEngineering#KnowledgeDiscovery"/> 
+ 
+    <rdfs:label>Data Aggregation</rdfs:label> 
+    <rdfs:comment>Data Aggregation etc</rdfs:comment> 
+ 
+</owl:Class> 
+<!--  Define the Data Aggregation class instance  --> 
+<rdf:Description 
+rdf:about="http://www.example.com/MechanicalEngineering#DataAggregation"> 
+<rdf:type 
+rdf:resource="http://www.example.com/MechanicalEngineering#KnowledgeDiscovery"/> 
+</rdf:Description> 
+ 
+<!-- OWL SubClass Definition - Semantic Search --> 
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering#SemanticSearch"> 
+ 
+    <rdfs:subClassOf 
+rdf:resource="http://www.example.com/MechanicalEngineering#KnowledgeDiscovery"/>
+
+    <rdfs:label>Semantic Search</rdfs:label> 
+    <rdfs:comment>Semantic Search etc</rdfs:comment> 
+ 
+</owl:Class> 
+<!--  Define the Semantic Search class instance  --> 
+<rdf:Description rdf:about="http://www.example.com/MechanicalEngineering#SemanticSearch"> 
+<!--  Semantic Search is an individual (instance) of the Knowledge discovery 
+class  --> 
+<rdf:type 
+rdf:resource="http://www.example.com/MechanicalEngineering#KnowledgeDiscovery"/> 
+</rdf:Description> 
+ 
+
+<!-- OWL SubClass Definition - Trend Analysis --> 
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering#TrendAnalysis"> 
+
+    <rdfs:subClassOf 
+rdf:resource="http://www.example.com/MechanicalEngineering#KnowledgeDiscovery"/> 
+ 
+    <rdfs:label>Trend Analysis</rdfs:label> 
+    <rdfs:comment>Trend Analysis etc</rdfs:comment> 
+ 
+</owl:Class> 
+<!--  Define the Trend Analysis Stealth class instance  --> 
+<rdf:Description 
+rdf:about="http://www.example.com/MechanicalEngineering#TrendAnalysis"> 
+<!--  Trend Analysis is an individual (instance) of the Knowledge discovery class  --> 
+<rdf:type 
+rdf:resource="http://www.example.com/MechanicalEngineering#KnowledgeDiscovery"/> 
+</rdf:Description> 
+ 
+
+<!-- OWL SubClass Definition - Knowledge Representation --> 
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering#KnowledgeRepresentation"> 
+  
+    <rdfs:subClassOf 
+rdf:resource="http://www.example.com/MechanicalEngineering#KnowledgeDiscovery"/> 
+ 
+    <rdfs:label>Knowledge Representation</rdfs:label> 
+    <rdfs:comment>Knowledge Representation etc</rdfs:comment> 
+ 
+</owl:Class> 
+<!--  Define the Knowledge Representation class instance  --> 
+<rdf:Description rdf:about="http://www.example.com/MechanicalEngineering#KnowledgeRepresentation"> 
+<!--  Knowledge Representation is an individual (instance)  --> 
+<rdf:type 
+rdf:resource="http://www.example.com/MechanicalEngineering#KnowledgeDiscovery"/> 
+</rdf:Description> 
+
+<!--
+/////////////////////////////////////////////////////////////////////////////
+ ///////// --> 
+ 
+<!-- Sub classes of Quality Control class starts from here --> 
+ 
+<!-- OWL SubClass Definition - Quality Metrics --> 
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering#QualityMetrics"> 
+ 
+    <!--  Quality Metricsr is a subclassification of Qualitu control --> 
+    <rdfs:subClassOf 
+rdf:resource="http://www.example.com/MechanicalEngineering#QualityControl"/> 
+ 
+    <rdfs:label> Quality Metrics</rdfs:label> 
+    <rdfs:comment> Quality Metrics etc</rdfs:comment> 
+ 
+</owl:Class> 
+<!--  Define the  Quality Metricsr class instance  --> 
+<rdf:Description rdf:about="http://www.example.com/MechanicalEngineering#QualityMetrics"> 
+<!--   Quality Metrics is an individual (instance) --> 
+<rdf:type rdf:resource="http://www.example.com/MechanicalEngineering#QualityControl"/> 
+</rdf:Description> 
+ 
+
+<!-- OWL SubClass Definition - Parameter Tracking--> 
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering#ParameterTracking"> 
+ 
+    <!-- Parameter Tracking is a subclassification--> 
+    <rdfs:subClassOf 
+rdf:resource="http://www.example.com/MechanicalEngineering#QualityControl"/> 
+ 
+    <rdfs:label>Parameter Tracking</rdfs:label> 
+    <rdfs:comment>Parameter Tracking etc</rdfs:comment> 
+ 
+</owl:Class> 
+<!--  Define the Parameter Tracking class instance  --> 
+<rdf:Description rdf:about="http://www.example.com/MechanicalEngineering#ParameterTracking"> 
+<!--  Parameter Tracking is an individual (instance) --> 
+<rdf:type rdf:resource="http://www.example.com/MechanicalEngineering#QualityControl"/> 
+</rdf:Description> 
+ 
+
+<!-- OWL SubClass Definition - Customer Feedback --> 
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering#CustomerFeedback"> 
+ 
+    <rdfs:subClassOf 
+rdf:resource="http://www.example.com/MechanicalEngineering#QualityControl"/> 
+ 
+    <rdfs:label>Customer Feedback</rdfs:label> 
+    <rdfs:comment>Customer Feedback etc</rdfs:comment> 
+ 
+</owl:Class> 
+<!--  Define the Customer Feedback class instance  --> 
+<rdf:Description rdf:about="http://www.example.com/MechanicalEngineering#CustomerFeedback"> 
+<!--  Customer Feedback is an individual (instance) -->
+
+<rdf:type rdf:resource="http://www.example.com/MechanicalEngineering#QualityControl"/> 
+</rdf:Description> 
+ 
+
+<!-- OWL SubClass Definition - Satisfaction Monitoring --> 
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering#SatisfactionMonitoring"> 
+ 
+    <!-- Satisfaction Monitoring is a subclassification  --> 
+    <rdfs:subClassOf 
+rdf:resource="http://www.example.com/MechanicalEngineering#QualityControl"/> 
+ 
+    <rdfs:label>Satisfaction Monitoring</rdfs:label> 
+    <rdfs:comment>Satisfaction Monitoring etc</rdfs:comment> 
+ 
+</owl:Class> 
+<!--  Define the Satisfaction Monitoring class instance  --> 
+<rdf:Description rdf:about="http://www.example.com/MechanicalEngineering#SatisfactionMonitoring"> 
+<!--  Satisfaction Monitoring is an individual (instance) --> 
+<rdf:type rdf:resource="http://www.example.com/MechanicalEngineering#QualityControl"/> 
+</rdf:Description> 
+ 
+
+
+<!-- OWL SubClass Definition - Quality Assurance --> 
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering#QualityAssurance"> 
+ 
+    <!-- Quality Assurance is a subclassification --> 
+    <rdfs:subClassOf 
+rdf:resource="http://www.example.com/MechanicalEngineering#QualityControl"/> 
+ 
+    <rdfs:label>Quality Assurance</rdfs:label> 
+    <rdfs:comment>Quality Assurance etc</rdfs:comment> 
+ 
+</owl:Class> 
+<!--  Define the Quality Assurance class instance  --> 
+<rdf:Description rdf:about="http://www.example.com/MechanicalEngineering#QualityAssurance"> 
+<!--  Quality Assurance is an individual (instance)   --> 
+<rdf:type rdf:resource="http://www.example.com/MechanicalEngineering#QualityControl"/> 
+</rdf:Description> 
+ 
+<!--
+/////////////////////////////////////////////////////////////////////////////
+ ///////// --> 
+ 
+<!-- Sub classes of Education and Training class starts from here --> 
+ 
+<!-- OWL SubClass Definition - Curriculum Development --> 
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering#CurriculumDevelopment"> 
+ 
+    <!-- Curriculum Development is a subclassification --> 
+    <rdfs:subClassOf 
+rdf:resource="http://www.example.com/MechanicalEngineering#EducationTraining"/> 
+    <rdfs:label>Curriculum Development</rdfs:label> 
+    <rdfs:comment>Curriculum Development etc</rdfs:comment> 
+ 
+</owl:Class> 
+
+<!--  Define the Curriculum Development class instance  --> 
+<rdf:Description rdf:about="http://www.example.com/MechanicalEngineering#CurriculumDevelopment"> 
+<!--  Curriculum Development is an individual (instance)  --> 
+<rdf:type rdf:resource="http://www.example.com/MechanicalEngineering#EducationTraining"/> 
+</rdf:Description> 
+ 
+
+
+<!-- OWL SubClass Definition - Learning Resources --> 
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering#LearningResources"> 
+ 
+    <!--Learning Resources is a subclassification --> 
+    <rdfs:subClassOf 
+rdf:resource="http://www.example.com/MechanicalEngineering#EducationTraining"/> 
+ 
+    <rdfs:label>Learning Resources</rdfs:label> 
+    <rdfs:comment>Learning Resources etc</rdfs:comment> 
+ 
+</owl:Class> 
+<!--  Define theLearning Resources class instance  --> 
+<rdf:Description rdf:about="http://www.example.com/MechanicalEngineering#LearningResources"> 
+<!--  Learning Resources is an individual (instance) --> 
+<rdf:type rdf:resource="http://www.example.com/MechanicalEngineering#LearningResources"/> 
+</rdf:Description> 
+ 
+
+<!-- OWL SubClass Definition - Professional Development --> 
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering#ProfessionalDevelopment"> 
+ 
+    <!-- Professional Developmentd is a subclassification --> 
+    <rdfs:subClassOf 
+rdf:resource="http://www.example.com/MechanicalEngineering#EducationTraining"/> 
+ 
+    <rdfs:label>Professional Development</rdfs:label> 
+    <rdfs:comment>Professional Development</rdfs:comment> 
+ 
+</owl:Class> 
+<!--  Define the Professional Development class instance  --> 
+<rdf:Description rdf:about="http://www.example.com/MechanicalEngineering#ProfessionalDevelopment"> 
+<!--  Professional Development is an individual (instance) --> 
+<rdf:type rdf:resource="http://www.example.com/MechanicalEngineering#EducationTraining"/> 
+</rdf:Description> 
+ 
+
+<!-- OWL SubClass Definition - Certification Programs --> 
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering#CertificationPrograms"> 
+ 
+    <!-- Certification Programs is a subclassification --> 
+    <rdfs:subClassOf 
+rdf:resource="http://www.example.com/MechanicalEngineering#EducationTraining"/> 
+ 
+    <rdfs:label>Certification Programs</rdfs:label> 
+    <rdfs:comment>Certification Programs</rdfs:comment> 
+ 
+</owl:Class> 
+<!--  Define the Certification Programs class instance  --> 
+<rdf:Description rdf:about="http://www.example.com/MechanicalEngineering#CertificationPrograms"> 
+<!-- Certification Programs is an individual (instance) --> 
+
+<rdf:type rdf:resource="http://www.example.com/MechanicalEngineering#EducationTraining"/> 
+</rdf:Description> 
+ 
+
+<!-- OWL SubClass Definition - Interactive Learning Platform --> 
+<owl:Class rdf:about="http://www.example.com/MechanicalEngineering#InteractiveLearningPlatform"> 
+ 
+    <!-- Interactive Learning Platform is a subclassification --> 
+    <rdfs:subClassOf 
+rdf:resource="http://www.example.com/MechanicalEngineering#EducationTraining"/> 
+ 
+    <rdfs:label>Interactive Learning Platform</rdfs:label> 
+    <rdfs:comment>Interactive Learning Platform</rdfs:comment> 
+ 
+</owl:Class> 
+<!--  Define the Interactive Learning Platform class instance  --> 
+<rdf:Description rdf:about="http://www.example.com/MechanicalEngineering#InteractiveLearningPlatform"> 
+<!--  Interactive Learning Platform is an individual (instance)  --> 
+<rdf:type rdf:resource="http://www.example.com/MechanicalEngineering#EducationTraining"/> 
+</rdf:Description> 
+ 
+
+ 
+</rdf:RDF> 
